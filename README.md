@@ -1,8 +1,8 @@
 # PCLA Evaluation and Analysis
 
-This repository contains the setup for benchmarking the PCLA agents on Bench2Drive, the evaluation results, and the materials from our analysis of agent features and driving performance. These include the feature catalogue, statistical analyses, tables and figures.
+This repository contains the setup for benchmarking the [PCLA](https://github.com/MasoudJTehrani/PCLA) agents on [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive), the evaluation results, and the materials from our analysis of agent features and driving performance. These include the feature catalogue, statistical analyses, tables and figures.
 
-You can run the 40 PCLA agents used in our study on the original Bench2Drive 220-route suite, using CARLA 0.9.15.
+You can run the 40 PCLA agents used in our study on the original Bench2Drive 220-route suite, using [CARLA](https://github.com/carla-simulator/carla) 0.9.15.
 
 ## 1. Install PCLA
 
