@@ -4,6 +4,8 @@ This repository contains the setup for benchmarking the [PCLA](https://github.co
 
 You can run the 40 PCLA agents used in our study on the original Bench2Drive 220-route suite, using [CARLA](https://github.com/carla-simulator/carla) 0.9.15.
 
+The benchmark results and analysis materials are available in [study_results](study_results/).
+
 ## 1. Install PCLA
 
 Use Linux with an NVIDIA GPU, working graphics/Vulkan drivers, Git and Conda. Clone this repository and enter its folder:
