@@ -1,0 +1,160 @@
+[
+  {
+    "id": "M0",
+    "label": "Context only",
+    "features": [
+      "source_carla_matches_b2d"
+    ]
+  },
+  {
+    "id": "M1",
+    "label": "Context + safeguards",
+    "features": [
+      "source_carla_matches_b2d",
+      "runtime_safety_or_recovery"
+    ]
+  },
+  {
+    "id": "M2",
+    "label": "Context + environment prediction + safeguards",
+    "features": [
+      "source_carla_matches_b2d",
+      "environment_prediction_present",
+      "runtime_safety_or_recovery"
+    ]
+  },
+  {
+    "id": "M3",
+    "label": "Context + augmented PID + environment prediction",
+    "features": [
+      "source_carla_matches_b2d",
+      "controller_augmented_pid",
+      "environment_prediction_present"
+    ]
+  },
+  {
+    "id": "M4",
+    "label": "Context + augmented PID + safeguards",
+    "features": [
+      "source_carla_matches_b2d",
+      "controller_augmented_pid",
+      "runtime_safety_or_recovery"
+    ]
+  },
+  {
+    "id": "M5",
+    "label": "Context + augmented PID + environment prediction + safeguards",
+    "features": [
+      "source_carla_matches_b2d",
+      "controller_augmented_pid",
+      "environment_prediction_present",
+      "runtime_safety_or_recovery"
+    ]
+  },
+  {
+    "id": "M6",
+    "label": "Context + safeguards + weather",
+    "features": [
+      "source_carla_matches_b2d",
+      "runtime_safety_or_recovery",
+      "training_weather_count"
+    ]
+  },
+  {
+    "id": "M7",
+    "label": "Context + target speed + weather",
+    "features": [
+      "source_carla_matches_b2d",
+      "predicts_target_speed",
+      "training_weather_count"
+    ]
+  },
+  {
+    "id": "M8",
+    "label": "Context + augmented PID + weather",
+    "features": [
+      "source_carla_matches_b2d",
+      "controller_augmented_pid",
+      "training_weather_count"
+    ]
+  },
+  {
+    "id": "M9",
+    "label": "Target speed + weather",
+    "features": [
+      "predicts_target_speed",
+      "training_weather_count"
+    ]
+  },
+  {
+    "id": "M10",
+    "label": "Augmented PID + weather",
+    "features": [
+      "controller_augmented_pid",
+      "training_weather_count"
+    ]
+  },
+  {
+    "id": "M11",
+    "label": "Target speed + towns",
+    "features": [
+      "predicts_target_speed",
+      "training_town_count"
+    ]
+  },
+  {
+    "id": "M12",
+    "label": "Environment prediction + safeguards",
+    "features": [
+      "environment_prediction_present",
+      "runtime_safety_or_recovery"
+    ]
+  },
+  {
+    "id": "M13",
+    "label": "Target speed + weather + safeguards",
+    "features": [
+      "predicts_target_speed",
+      "training_weather_count",
+      "runtime_safety_or_recovery"
+    ]
+  },
+  {
+    "id": "M14",
+    "label": "Augmented PID + weather + environment prediction",
+    "features": [
+      "controller_augmented_pid",
+      "training_weather_count",
+      "environment_prediction_present"
+    ]
+  },
+  {
+    "id": "M15",
+    "label": "Context + target speed + towns",
+    "features": [
+      "source_carla_matches_b2d",
+      "predicts_target_speed",
+      "training_town_count"
+    ]
+  },
+  {
+    "id": "M16",
+    "label": "Context + target speed + weather + safeguards",
+    "features": [
+      "source_carla_matches_b2d",
+      "predicts_target_speed",
+      "training_weather_count",
+      "runtime_safety_or_recovery"
+    ]
+  },
+  {
+    "id": "M17",
+    "label": "Context + augmented PID + weather + environment prediction",
+    "features": [
+      "source_carla_matches_b2d",
+      "controller_augmented_pid",
+      "training_weather_count",
+      "environment_prediction_present"
+    ]
+  }
+]

@@ -1,0 +1,425 @@
+[
+  {
+    "code": "rgb_camera_count",
+    "label": "RGB camera count",
+    "group": "Sensors and navigation",
+    "kind": "numeric",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "rgb_camera_count"
+  },
+  {
+    "code": "uses_lidar",
+    "label": "Uses LiDAR",
+    "group": "Sensors and navigation",
+    "kind": "binary",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "uses_lidar"
+  },
+  {
+    "code": "uses_radar",
+    "label": "Uses radar",
+    "group": "Sensors and navigation",
+    "kind": "binary",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "uses_radar"
+  },
+  {
+    "code": "uses_imu",
+    "label": "Uses IMU",
+    "group": "Sensors and navigation",
+    "kind": "binary",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "uses_imu"
+  },
+  {
+    "code": "uses_privileged_runtime_information",
+    "label": "Uses privileged runtime information",
+    "group": "Sensors and navigation",
+    "kind": "binary",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "uses_privileged_runtime_information"
+  },
+  {
+    "code": "bev_runtime_representation",
+    "label": "Uses a BEV runtime representation",
+    "group": "Internal representation",
+    "kind": "binary",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "bev_runtime_representation"
+  },
+  {
+    "code": "explicit_safety_layer",
+    "label": "Has an explicit safety layer",
+    "group": "Planning and control",
+    "kind": "binary",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "explicit_safety_layer"
+  },
+  {
+    "code": "stuck_recovery",
+    "label": "Has stuck recovery",
+    "group": "Planning and control",
+    "kind": "binary",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "stuck_recovery"
+  },
+  {
+    "code": "inference_ensemble",
+    "label": "Uses an inference ensemble",
+    "group": "Runtime inference",
+    "kind": "binary",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "inference_ensemble"
+  },
+  {
+    "code": "uses_language_at_inference",
+    "label": "Uses language at inference",
+    "group": "Runtime inference",
+    "kind": "binary",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "uses_language_at_inference"
+  },
+  {
+    "code": "uses_non_ego_motion_supervision",
+    "label": "Uses non-ego motion supervision",
+    "group": "Training paradigm and supervision",
+    "kind": "binary",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "uses_non_ego_motion_supervision"
+  },
+  {
+    "code": "aux_semantic_supervision",
+    "label": "Semantic auxiliary supervision",
+    "group": "Training paradigm and supervision",
+    "kind": "binary",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "aux_semantic_supervision"
+  },
+  {
+    "code": "aux_depth_supervision",
+    "label": "Depth auxiliary supervision",
+    "group": "Training paradigm and supervision",
+    "kind": "binary",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "aux_depth_supervision"
+  },
+  {
+    "code": "aux_bev_supervision",
+    "label": "BEV auxiliary supervision",
+    "group": "Training paradigm and supervision",
+    "kind": "binary",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "aux_bev_supervision"
+  },
+  {
+    "code": "aux_object_supervision",
+    "label": "Object auxiliary supervision",
+    "group": "Training paradigm and supervision",
+    "kind": "binary",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "aux_object_supervision"
+  },
+  {
+    "code": "aux_traffic_rule_supervision",
+    "label": "Traffic-rule auxiliary supervision",
+    "group": "Training paradigm and supervision",
+    "kind": "binary",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "aux_traffic_rule_supervision"
+  },
+  {
+    "code": "training_town_count",
+    "label": "Training town count",
+    "group": "Training data, scale and diversity",
+    "kind": "numeric",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "training_town_count"
+  },
+  {
+    "code": "training_weather_count",
+    "label": "Training weather count",
+    "group": "Training data, scale and diversity",
+    "kind": "numeric",
+    "origin": "Original",
+    "role": "Candidate",
+    "source": "training_weather_count"
+  },
+  {
+    "code": "source_carla_version",
+    "label": "Source CARLA version",
+    "group": "Compatibility and provenance",
+    "kind": "categorical",
+    "origin": "Original",
+    "role": "Context",
+    "source": "source_carla_version"
+  },
+  {
+    "code": "source_carla_matches_b2d",
+    "label": "Source CARLA matches B2D 0.9.15",
+    "group": "Compatibility and provenance",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Context",
+    "source": "source_carla_version"
+  },
+  {
+    "code": "source_python_3_10",
+    "label": "Source Python is 3.10.x",
+    "group": "Compatibility and provenance",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Context",
+    "source": "source_python_version"
+  },
+  {
+    "code": "leaderboard_api_v2",
+    "label": "Uses Leaderboard API 2",
+    "group": "Compatibility and provenance",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Context",
+    "source": "leaderboard_api_version"
+  },
+  {
+    "code": "multi_camera_rgb",
+    "label": "Multi-camera RGB setup",
+    "group": "Sensors and navigation",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "rgb_camera_count"
+  },
+  {
+    "code": "front_focus_present",
+    "label": "Dedicated front-focus input",
+    "group": "Sensors and navigation",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "front_focus_input"
+  },
+  {
+    "code": "surround_or_rear_camera_rgb",
+    "label": "Surround/rear camera coverage among RGB agents",
+    "group": "Sensors and navigation",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "camera_coverage"
+  },
+  {
+    "code": "target_point_conditioning",
+    "label": "Uses target-point navigation conditioning",
+    "group": "Sensors and navigation",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "navigation_conditioning"
+  },
+  {
+    "code": "transformer_or_attention_representation",
+    "label": "Transformer/attention representation or fusion",
+    "group": "Internal representation",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "fusion_type"
+  },
+  {
+    "code": "visual_backbone_transformer_rgb",
+    "label": "Transformer visual backbone among RGB agents",
+    "group": "Internal representation",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "visual_backbone_family"
+  },
+  {
+    "code": "environment_prediction_present",
+    "label": "Predictions about the surrounding scene",
+    "group": "Internal representation",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "environment_prediction_type"
+  },
+  {
+    "code": "temporal_reasoning_present",
+    "label": "Explicit temporal reasoning",
+    "group": "Internal representation",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "temporal_reasoning"
+  },
+  {
+    "code": "planning_output_class",
+    "label": "Planning-output class",
+    "group": "Planning and control",
+    "kind": "categorical",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "planning_output"
+  },
+  {
+    "code": "predicts_target_speed",
+    "label": "Predicts or explicitly uses target speed",
+    "group": "Planning and control",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "planning_output; controller_type"
+  },
+  {
+    "code": "decoder_refinement_present",
+    "label": "Decoder or trajectory refinement",
+    "group": "Planning and control",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "decoder_refinement_type"
+  },
+  {
+    "code": "controller_class",
+    "label": "Controller class",
+    "group": "Planning and control",
+    "kind": "categorical",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "controller_type"
+  },
+  {
+    "code": "controller_augmented_pid",
+    "label": "PID with additional logic",
+    "group": "Planning and control",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "controller_type"
+  },
+  {
+    "code": "explicit_traffic_rule_mechanism",
+    "label": "Explicit traffic-rule mechanism",
+    "group": "Planning and control",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "traffic_rule_handling"
+  },
+  {
+    "code": "runtime_safety_or_recovery",
+    "label": "Runtime safety or recovery",
+    "group": "Planning and control",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "explicit_safety_layer; stuck_recovery"
+  },
+  {
+    "code": "control_safeguard_count",
+    "label": "Number of explicit control safeguards",
+    "group": "Planning and control",
+    "kind": "numeric",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "traffic-rule flag; safety layer; stuck recovery"
+  },
+  {
+    "code": "uses_rl_training",
+    "label": "Uses reinforcement-learning training",
+    "group": "Training paradigm and supervision",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "training_paradigm"
+  },
+  {
+    "code": "distillation_based_training",
+    "label": "Uses distillation-based training",
+    "group": "Training paradigm and supervision",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "training_paradigm"
+  },
+  {
+    "code": "training_paradigm_grouped",
+    "label": "Training paradigm class",
+    "group": "Training paradigm and supervision",
+    "kind": "categorical",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "training_paradigm"
+  },
+  {
+    "code": "multi_stage_training",
+    "label": "Uses multi-stage training",
+    "group": "Training paradigm and supervision",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "training_pipeline_structure"
+  },
+  {
+    "code": "privileged_supervision_grouped",
+    "label": "Privileged supervision class",
+    "group": "Training paradigm and supervision",
+    "kind": "categorical",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "privileged_supervision_type"
+  },
+  {
+    "code": "aux_supervision_count",
+    "label": "Number of auxiliary supervision types",
+    "group": "Training paradigm and supervision",
+    "kind": "numeric",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "five aux_* flags"
+  },
+  {
+    "code": "auxiliary_used_at_runtime",
+    "label": "Auxiliary outputs used at runtime",
+    "group": "Training paradigm and supervision",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "auxiliary_inference_role"
+  },
+  {
+    "code": "log_offline_training_samples",
+    "label": "Log10 offline training-set size",
+    "group": "Training data, scale and diversity",
+    "kind": "numeric",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "offline_training_sample_count"
+  },
+  {
+    "code": "augmentation_present",
+    "label": "Uses explicit data augmentation",
+    "group": "Data provenance and augmentation",
+    "kind": "binary",
+    "origin": "Derived",
+    "role": "Candidate",
+    "source": "augmentation_strategy"
+  }
+]
